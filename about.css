@@ -1,0 +1,176 @@
+/************ GENERAL CLASSES **************/
+
+.card {
+    box-shadow: inset 0 2px 1px -1px rgba(255, 255, 255, 0.251);
+    transition: all 0.5s;
+}
+.card:hover {
+    cursor: default;
+    transform: scale(1.20);
+    box-shadow: 0 0 4px rgb(101, 99, 99);
+}
+
+/************ ABOUT SECTION **************/
+
+#about {
+    animation: about 1.5s ease-out forwards;
+    padding: 10px 80px 40px 30px;
+    grid-template-areas: 
+    "heading heading gif"
+    "personalhead personaldesc personaldesc"
+    "personalhead personaldesc personaldesc"
+    "techdesc techdesc techhead"
+    "techdesc techdesc techhead"
+    "achievementshead achievementsdesc achievementsdesc"
+    "achievementshead achievementsdesc achievementsdesc";
+    gap: 2.5rem;
+}
+
+@keyframes about {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.about-heading {
+    font-size: 4rem;
+    grid-area: heading;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+}
+
+.gif-container {
+    grid-area: gif;
+    position: relative;
+}
+
+.gif-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.sub-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+}
+
+.sub-heading h3 {
+    color: var(--complementary);
+    font-size: 2rem;
+}
+
+.sub-heading p, .sub-heading blockquote {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.description {
+    padding: 10px;
+    box-shadow: 1px 1px 6px -3px rgba(255, 255, 255, 0.475);
+    border-radius: 10px;
+}
+
+.personal-heading {
+    grid-area: personalhead;
+}
+
+.personal-description {
+    grid-area: personaldesc;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.tech-heading {
+    grid-area: techhead;
+}
+
+.tech-description {
+    grid-area: techdesc;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 350px;
+
+}
+
+.achievements-heading {
+    grid-area: achievementshead;
+}
+
+.achievements-description {
+    grid-area: achievementsdesc;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personality {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    background: var(--gradient-primary);
+    text-align: center;
+}
+
+.tech-container {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+}
+
+/* To show image description below */
+.tech-container:hover::after {
+    content: attr(data);
+    position: absolute;
+    top: 100%;
+    color: var(--text-secondary);
+}   
+
+.tech-container img {
+    width: 100%;
+}
+
+#react-icon {
+    animation: react 4s linear infinite;
+}
+
+@keyframes react {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#github-icon {
+    filter: invert();
+}
+
+.achievements-description img {
+    width: 28%;
+    margin: 25px;
+}

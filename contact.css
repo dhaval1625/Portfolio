@@ -1,0 +1,124 @@
+/************ CONTACT SECTION **************/
+
+#contact {
+    animation: contact 1s linear forwards;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    transform-origin: left;
+    justify-items: center;
+    padding-bottom: 3rem;
+}
+
+@keyframes contact {
+    0% {
+        transform: skew(2deg,15deg)
+    }
+    100% {
+        transform: skew(0deg,0deg);
+    }
+}
+
+.contact-heading {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--secondary);
+}
+
+.contact-heading img {
+    width: 24%;
+}
+
+.contact-links {
+    width: 80%;
+    height: 27rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: center;
+    font-size: 5rem;
+}
+
+.contact-links div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links span {
+    font-size: 1.5rem;
+}
+
+.contact-links i {
+    transition: transform 0.4s;
+}
+
+.contact-links i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30rem;
+    width: 60%;
+    margin-top: 6rem;
+}
+
+.contact-form-container h3 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.contact-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 8px;
+    border-radius: 10px;
+    width: 50%;
+    background-color: var(--dark);
+    color: inherit;
+    border: none;
+    box-shadow: inset 0 1px 1px -0.5px rgba(255, 255, 255, 0.299);
+    font-size: 1.2rem;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.contact-form textarea {
+    height: 8rem;
+    font-size: 1rem;
+}
+
+.submit {
+    margin-top: 3rem;
+    padding: 8px;
+    border-radius: 10px;
+    width: 50%;
+    background: var(--complementary);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+    transition: transform 0.3s;
+}
+
+.submit:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.submit:active {
+    opacity: 0.8;
+}
