@@ -47,6 +47,7 @@
 .gif-container {
     grid-area: gif;
     position: relative;
+    width: fit-content;
 }
 
 .gif-overlay {

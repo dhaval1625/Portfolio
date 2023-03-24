@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" /> 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="media.css">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script defer src="script.js"></script>
     <title>Dhaval Ladani</title>
@@ -17,7 +18,6 @@
 
 <body>
     <nav id="navbar">
-
         <ul>
             <a data-description="Home" class="nav-link hvr-hang active-link" href="#home">
                 <li><i class="fas fa-home"></i><span></span></li>
@@ -33,6 +33,34 @@
             </a>
         </ul>
     </nav>
+
+    <!-- ***** Mobile device navbar ***** -->
+
+    <div class="container-fluid nav-media">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample01" aria-controls="navbarsExample01"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarsExample01">
+            <ul>
+                <a class="nav-media-link" href="#home">
+                    <li><i class="fas fa-home"></i><span>Home</span></li>
+                </a>
+                <a class="nav-media-link" href="#about">
+                    <li><i class="fas fa-user"></i><span>About</span></li>
+                </a>
+                <a class="nav-media-link" href="#projects">
+                    <li><i class="fas fa-code"></i><span>Projects</span></li>
+                </a>
+                <a class="nav-media-link" href="#contact">
+                    <li><i class="fas fa-phone"></i><span>Contact</span></li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+
     <section class="active-section" id="home">
         <img id="main-image" src="images/image-dhaval.jpg" alt="My photo">
         <div class="home-title">
@@ -41,7 +69,7 @@
             <p>Highly motivated and enthusiastic Front End Developer with knowledge of designing, developing and
                 maintaining web applications using technologies such as JavaScript, React, Bootstrap.</p>
         </div>
-        <div class="snow">
+        <!-- <div class="snow">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
                 <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
                    <g id="snow-bottom-layer">
@@ -112,7 +140,7 @@
                    </g>
                 </g>
             </svg>
-        </div>
+        </div> -->
     </section>
     <section id="about">
         <div class="about-heading">
@@ -121,7 +149,7 @@
 
         <div class="gif-container">
             <div class="gif-overlay"></div>
-            <iframe src="https://giphy.com/embed/L1R1tvI9svkIWwpVYr" width="480" height="270" frameBorder="0"></iframe>
+            <iframe src="https://giphy.com/embed/L1R1tvI9svkIWwpVYr" frameBorder="0"></iframe>
         </div>
         <div class="sub-heading personal-heading">
             <h3>Personality</h3>
@@ -140,7 +168,8 @@
         </div>
         <div class="sub-heading tech-heading">
             <h3>Tech Skills</h3>
-            <p>I am able to design, build and maintain front end web applications with help of technologies like react, html, css etc.</p>
+            <p>I am able to design, build and maintain front end web applications with help of technologies like react,
+                html, css etc.</p>
         </div>
         <div class="description tech-description">
             <div data="React" class="card tech-container"><img id="react-icon" src="images/tech/react.svg"
@@ -167,7 +196,8 @@
         </div>
         <div class="sub-heading achievements-heading">
             <h3>Achievements</h3>
-            <blockquote>“Programs must be written for people to read, and only incidentally for machines to execute.” ― Harold Abelson</blockquote>
+            <blockquote>“Programs must be written for people to read, and only incidentally for machines to execute.” ―
+                Harold Abelson</blockquote>
         </div>
         <div class="description achievements-description">
             <img src="images/Certificates/responsive.png" alt="responsive design certificate">
@@ -382,14 +412,14 @@
                 <input type="email" name="email" id="email" required>
 
                 <label for="message">Your Message</label>
-                <textarea name="message" id="message" ></textarea>
+                <textarea name="message" id="message"></textarea>
 
                 <button class="submit" type="submit">Send</button>
             </form>
         </div>
     </section>
 
-    
+
 </body>
 
 </html>

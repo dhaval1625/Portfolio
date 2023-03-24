@@ -1,0 +1,209 @@
+/* ***** Navbar ***** */
+
+.container-fluid{
+    width: 100%;
+    padding: 10px;
+    display: none;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.612);
+    z-index: 5;
+}
+
+.navbar-collapse ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    width: 100%;
+}
+
+.nav-media-link {
+    box-shadow: 0 0 5px rgba(210, 207, 207, 0.393);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 12px 0;
+    font-size: 1.2rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.navbar-toggler {
+    padding: 10px 8px 7px 13px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    float: right;
+}
+
+.navbar-toggler:active {
+    cursor: pointer;
+    filter: brightness(125%);
+}
+
+.collapse {
+    display: none;
+}
+
+/* ***** Media Queries ***** */
+
+@media screen and (max-width: 900px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container-fluid {
+        display: block;
+    }
+
+    .active-section {
+        display: flex;
+    }
+
+    /* ***** Home section ***** */
+
+    #home {
+        justify-content: center;
+    }
+
+    .home-title {
+        position:static;
+        transform: none;
+        margin-top: 3rem;
+    }
+
+    #main-image {
+        position: static;
+        transform: none;
+    }
+
+    #portfolio-title {
+        font-size: 2.5rem;
+        letter-spacing: normal;
+    }
+
+    #portfolio-description {
+        font-size: 1.2rem;
+    }
+
+    #home::before {
+        left: -20%;
+    }
+
+    /* ***** About section */
+
+    #about {
+        gap: 1rem;
+        padding: 5px;
+    }
+
+    .gif-container iframe {
+        width: 100%;
+        height: 150px;
+    }
+
+    .gif-container {
+        width: 70%;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+
+    .sub-heading p, blockquote {
+        display: none;
+    }
+
+    .personal-description {
+        font-size: 1rem;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .personality {
+        width: 100%;
+    }
+
+    .tech-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .achievements-description img {
+        width: 80%;
+    }
+
+    #projects {
+        padding: 8px;
+    }
+
+    .projects-heading {
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .projects-heading img {
+        width: 50%;
+    }
+
+    .projects-container {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+
+    .contact-heading {
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .contact-heading img {
+        width: 50%;
+    }
+
+    .contact-links {
+        width: 80%;
+        height: 20rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        justify-items: center;
+        font-size: 3rem;
+    }
+
+    .contact-links span {
+        font-size: 0.9rem;
+    }
+
+    .contact-form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30rem;
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .contact-form-container h3 {
+        font-size: 1.1rem;
+    }
+    .contact-form {
+        margin-top: 10px;
+        font-size: 1.1rem;
+    }
+
+    .contact-form input, .contact-form textarea, .submit {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
