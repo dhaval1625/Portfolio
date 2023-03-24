@@ -3,10 +3,12 @@
 .container-fluid{
     width: 100%;
     padding: 10px;
+    padding-top: 25px;
     display: none;
+    flex-direction: column;
     position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.612);
+    background-color: rgba(0, 0, 0, 0.822);
     z-index: 5;
 }
 
@@ -16,6 +18,21 @@
     align-items: center;
     margin-top: 0;
     width: 100%;
+}
+
+.navbar-collapse {
+    width: 100%;
+    height: fit-content;
+    animation: show-media-nav 0.5s linear forwards;
+}
+
+@keyframes show-media-nav {
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .nav-media-link {
@@ -30,15 +47,20 @@
 }
 
 .navbar-toggler {
-    padding: 10px 8px 7px 13px;
+    padding: 8px 6px 5px 13px;
     border-radius: 5px;
     font-size: 1.2rem;
-    float: right;
+    max-width: 45px;
+    align-self: flex-end;
+    background-color: var(--secondary);
+    border: none;
+    color: var(--light);
 }
 
 .navbar-toggler:active {
     cursor: pointer;
     filter: brightness(125%);
+    transform: scale(1.09);
 }
 
 .collapse {
@@ -61,11 +83,15 @@
     }
 
     .container-fluid {
-        display: block;
+        display: flex;
     }
 
     .active-section {
         display: flex;
+    }
+
+    #home, #about, #projects, #contact {
+        animation: none;
     }
 
     /* ***** Home section ***** */

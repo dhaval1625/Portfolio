@@ -13,7 +13,7 @@
 /************ ABOUT SECTION **************/
 
 #about {
-    animation: about 1.5s ease-out forwards;
+    animation: about 1s ease-out forwards;
     padding: 10px 80px 40px 30px;
     grid-template-areas: 
     "heading heading gif"
@@ -28,7 +28,7 @@
 
 @keyframes about {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-60%);
     }
     100% {
         transform: translateY(0);

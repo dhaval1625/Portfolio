@@ -53,3 +53,10 @@ $('.contact-form').submit( async (e) => {
     setTimeout(() => $('.contact-form p').remove(),5000)
 
 });
+
+
+// * Mobile navbar functionality
+
+$('.navbar-toggler').click(() => {
+    $('.navbar-collapse').toggleClass('collapse');
+})
