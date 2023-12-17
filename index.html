@@ -67,7 +67,7 @@
             <h1 id="portfolio-title">Dhaval Ladani</h1>
             <h3 id="portfolio-description">Front End Developer</h3>
             <p>Highly motivated and enthusiastic Front End Developer with knowledge of designing, developing and
-                maintaining web applications using technologies such as JavaScript, React, Bootstrap.</p>
+                maintaining web applications using technologies such as JavaScript, React JS, Vue JS, Typescript, Tailwind css, Material UI, etc.</p>
         </div>
         <div class="snow">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
@@ -174,10 +174,20 @@
         <div class="description tech-description">
             <div data="React" class="card tech-container"><img id="react-icon" src="images/tech/react.svg"
                     alt="react icon"></div>
+            <div data="Vue JS" class="card tech-container"><img src="images/tech/vue.png"
+                    alt="vue icon"></div>
             <div data="HTML" class="card tech-container"><img src="images/tech/html-5.png" alt="html icon"></div>
             <div data="CSS" class="card tech-container"><img src="images/tech/css.png" alt="css icon"></div>
             <div data="JavaScript" class="card tech-container"><img src="images/tech/java-script.png"
                     alt="javascript icon"></div>
+            <div data="Typescript" class="card tech-container"><img src="images/tech/typescript.png"
+                    alt="typescript icon"></div>
+            <div data="Material UI" class="card tech-container"><img src="images/tech/mui.png"
+                    alt="Material UI icon">
+            </div>
+            <div data="Tailwind CSS" class="card tech-container"><img src="images/tech/tailwind.png"
+                    alt="tailwind css icon">
+            </div>
             <div data="Bootstrap" class="card tech-container"><img src="images/tech/bootstrap-logo-shadow.png"
                     alt="bootstrap icon">
             </div>
@@ -186,9 +196,9 @@
                     alt="responsive design icon"></div>
             <div data="Redux" class="card tech-container"><img src="images/tech/redux.svg" alt="redux icon"></div>
             <div data="Git" class="card tech-container"><img src="images/tech/git.png" alt="git icon"></div>
-            <div data="Github" class="card tech-container"><img id="github-icon" src="images/tech/github.png"
+            <!-- <div data="Github" class="card tech-container"><img id="github-icon" src="images/tech/github.png"
                     alt="github icon">
-            </div>
+            </div> -->
             <div data="jQuery" class="card tech-container"><img src="images/tech/jquery.png" alt="jquery icon"></div>
             <div data="Firebase" class="card tech-container"><img src="images/tech/firebase.svg" alt="firebase icon">
             </div>
@@ -201,7 +211,9 @@
         </div>
         <div class="description achievements-description">
             <img src="images/Certificates/responsive.png" alt="responsive design certificate">
-            <img src="images/Certificates/javascript.png" alt="responsive design certificate">
+            <img src="images/Certificates/javascript.png" alt="javascript certificate">
+            <img src="images/Certificates/react.jpg" alt="react certificate">
+            <img src="images/Certificates/web dev bootcamp.jpg" alt="web development bootcamp certificate">
         </div>
     </section>
     <section id="projects">
@@ -211,6 +223,54 @@
         </div>
         <div class="project-grid">
 
+
+            <!--**** Task Manager app ***** -->
+            <div class="projects-container">
+                <img src="images/projects/task-manager.png" alt="forkify app">
+                <div class="project-links">
+                    <p>Link to source code & live site:</p>
+                    <div class="link-container">
+                        <a href="https://github.com/dhaval1625/task-manager" target="_blank"><button><img
+                                    src="images/tech/github.png" alt="github icon"></button></a>
+                        <a href="https://taskmanager2507.vercel.app/" target="_blank"><button><i
+                                    class="fas fa-external-link-alt"></i></button></a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <h4>Task Manager</h4>
+                    <p>CRUD app to manage your important tasks. Login to save your tasks on database.</p>
+                </div>
+                <div class="project-techs">
+                    <div><img src="images/tech/react.svg" alt="react icon"></div>
+                    <div><img src="images/tech/typescript.png" alt="typescript icon"></div>
+                    <div><img src="images/tech/firebase.svg" alt="firebase icon"></div>
+                    <div><img src="images/tech/redux.svg" alt="redux icon"></div>
+                </div>
+            </div>
+
+            <!--**** Friends app ***** -->
+            <div class="projects-container">
+                <img src="images/projects/friends.png" alt="friends app">
+                <div class="project-links">
+                    <p>Link to source code & live site:</p>
+                    <div class="link-container">
+                        <a href="https://github.com/dhaval1625/Friends" target="_blank"><button><img
+                                    src="images/tech/github.png" alt="github icon"></button></a>
+                        <a href="https://friends-2507.vercel.app/" target="_blank"><button><i
+                                    class="fas fa-external-link-alt"></i></button></a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <h4>Friends App</h4>
+                    <p>Register in this app. Login to see what others are doing, make friends and add posts to share your thoughts with others.</p>
+                </div>
+                <div class="project-techs">
+                    <div><img src="images/tech/react.svg" alt="react icon"></div>
+                    <div><img src="images/tech/java-script.png" alt="javscript icon"></div>
+                    <div><img src="images/tech/firebase.svg" alt="firebase icon"></div>
+                    <div><img src="images/tech/redux.svg" alt="redux icon"></div>
+                </div>
+            </div>
 
             <!--**** Forkify app ***** -->
             <div class="projects-container">
@@ -230,9 +290,7 @@
                         Increase
                         or decrease servings as per your preference. And also add your custom recipe which is only
                         visible
-                        to you.Recipes are loaded by fetching data from an API and custom recipes are sent to that API
-                        for
-                        storing it with personalised key.</p>
+                        to you.</p>
                 </div>
                 <div class="project-techs">
                     <div><img src="images/tech/html-5.png" alt="html icon"></div>
@@ -291,7 +349,7 @@
                 </div>
             </div>
 
-            <!-- ***** Newton Motors -->
+            <!-- ***** Newton Motors
             <div class="projects-container">
                 <img src="images/projects/newton-motors.png" alt="Newton Motors website">
                 <div class="project-links">
@@ -312,7 +370,7 @@
                     <div><img src="images/tech/css.png" alt="css icon"></div>
                     <div><img src="images/tech/bootstrap-logo-shadow.png" alt="api icon"></div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ***** ToDo App -->
             <div class="projects-container">
@@ -345,7 +403,7 @@
                     <div class="link-container">
                         <a href="https://github.com/dhaval1625/Memory-Game" target="_blank"><button><img
                                     src="images/tech/github.png" alt="github icon"></button></a>
-                        <a href="https://memorygame-rd.netlify.app/" target="_blank"><button><i
+                        <a href="https://memorygame-rd-v2.netlify.app/" target="_blank"><button><i
                                     class="fas fa-external-link-alt"></i></button></a>
                     </div>
                 </div>

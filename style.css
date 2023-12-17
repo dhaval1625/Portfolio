@@ -136,7 +136,7 @@ nav ul {
 
 #home {
     position: relative;
-    animation: home 1.5s ease-out forwards;
+    animation: home 0.8s ease-out forwards;
     overflow: hidden;
 }
 
@@ -151,6 +151,7 @@ nav ul {
 
 .home-title {
     position: absolute;
+    z-index: 500;
     top: 50%;
     left: 62%;
     transform: translate(-50%,-50%);
@@ -179,8 +180,11 @@ nav ul {
 
 #main-image {
     position: absolute;
+    z-index: 500;
     width: 20%;
     min-width: 180px;
+    aspect-ratio: 1;
+    object-fit: cover;
     top: 50%;
     left: 10%;
     transform: translate(-10%,-50%);

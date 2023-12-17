@@ -182,12 +182,6 @@
         width: 50%;
     }
 
-    .projects-container {
-        font-size: 0.8rem;
-        width: 100%;
-    }
-
-
     .contact-heading {
         flex-direction: column;
         font-size: 2rem;

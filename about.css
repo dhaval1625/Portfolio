@@ -13,7 +13,7 @@
 /************ ABOUT SECTION **************/
 
 #about {
-    animation: about 1s ease-out forwards;
+    animation: about 0.8s ease-out forwards;
     padding: 10px 80px 40px 30px;
     grid-template-areas: 
     "heading heading gif"
@@ -174,4 +174,6 @@
 .achievements-description img {
     width: 28%;
     margin: 25px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
 }
