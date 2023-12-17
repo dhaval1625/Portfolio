@@ -79,6 +79,10 @@
     transition: all 0.5s ;
 }
 
+.link-container button {
+    border: none;
+}
+
 .link-container button:hover, .project-techs div:hover {
     filter: brightness(120%);
     cursor: pointer;
